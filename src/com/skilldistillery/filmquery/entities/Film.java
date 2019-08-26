@@ -43,8 +43,8 @@ public class Film {
 	@Override
 	public String toString() {
 
-		return "Title:  " + title + "\n\tYear: " + releaseYear + "\n\tMPAA Rating: " + rating + "\n\tSynopsis: "
-				+ description + "\n\tLanguage: " + language + "\n\tCast: " + actors;
+		return "Title: \t\t" + title + "\nYear:   \t" + releaseYear + "\nMPAA Rating:  \t" + rating + "\nSynopsis: \t"
+				+ description + "\nLanguage: \t" + language + "\nCast: \t\t" + actors;
 	}
 
 	public void printActors() {

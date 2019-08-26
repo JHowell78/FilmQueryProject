@@ -61,11 +61,13 @@ public class FilmQueryApp {
 					if (movie != null) {
 						System.out.println(movie + "\n");
 					} else {
-						System.out.println("\n" + "Unable to find a movie with that ID #" + "\n" + "Please enter a valid Id # (1 - 1000) \n");
+						System.out.println("\n" + "Unable to find a movie with that ID #" + "\n"
+								+ "Please enter a valid Id # (1 - 1000) \n");
 					}
 				} catch (InputMismatchException e) {
 					input.nextLine();
-					System.out.println("\n" + "Unable to find a movie with that ID # " + "\n" + "Please enter a valid Id # (1 - 1000) \n");
+					System.out.println("\n" + "Unable to find a movie with that ID # " + "\n"
+							+ "Please enter a valid Id # (1 - 1000) \n");
 				}
 				break;
 
@@ -94,6 +96,6 @@ public class FilmQueryApp {
 			default:
 				System.out.println("Please enter a valid number" + "\n");
 			}
-		}while (menu) ;
+		} while (menu);
 	}
 }
