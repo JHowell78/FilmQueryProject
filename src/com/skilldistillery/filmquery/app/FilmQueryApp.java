@@ -16,19 +16,9 @@ public class FilmQueryApp {
 
 	public static void main(String[] args) throws SQLException {
 		FilmQueryApp app = new FilmQueryApp();
-//		app.test();
 		app.launch();
 	}
 
-//	private void test() {
-//		Film film = null;
-//		try {
-//			film = db.findFilmById(59);
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		}
-//		System.out.println(film);
-//	}
 
 	private void launch() throws SQLException {
 		Scanner input = new Scanner(System.in);
