@@ -43,7 +43,7 @@ public class FilmQueryApp {
 			switch (userChoice) {
 
 			case "1":
-				System.out.println("Please enter a film ID # (1 - 1000)");
+				System.out.println("Please enter a film ID #");
 				try {
 					filmId = input.nextInt();
 					movie = db.findFilmById(filmId);
@@ -51,13 +51,11 @@ public class FilmQueryApp {
 					if (movie != null) {
 						System.out.println(movie + "\n");
 					} else {
-						System.out.println("\n" + "Unable to find a movie with that ID #" + "\n"
-								+ "Please enter a valid Id # (1 - 1000) \n");
+						System.out.println("\n" + "Unable to find a movie with that ID #" );
 					}
 				} catch (InputMismatchException e) {
 					input.nextLine();
-					System.out.println("\n" + "Unable to find a movie with that ID # " + "\n"
-							+ "Please enter a valid Id # (1 - 1000) \n");
+					System.out.println("\n" + "Unable to find a movie with that ID # " );
 				}
 				break;
 
